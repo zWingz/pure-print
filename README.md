@@ -1,3 +1,3 @@
 # PrintThis
 
-Base on [PrintThis](https://github.com/jasonday/printThis), but not denpendent on `jQuery`
+Base on [PrintThis](https://github.com/jasonday/printThis), but not depend on `jQuery`
