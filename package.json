@@ -1,19 +1,40 @@
 {
-  "name": "@zzwing/printthis",
+  "name": "pure-print",
   "version": "1.0.0",
   "description": "print element on a page without any dependence",
   "main": "dist/index.js",
   "module": "es/index.js",
+  "keywords": [
+    "print"
+  ],
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "tslint": "tslint --fix --format codeFrame --project .",
+    "pub": "yarn tslint && yarn build && yarn publish"
   },
+  "files": [
+    "dist",
+    "es",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zWingz/pure-print.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zWingz/pure-print/issues"
+  },
+  "homepage": "https://github.com/zWingz/pure-print#readme",
   "author": "zhengzwing@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "rollup-plugin-typescript": "^1.0.0",
-    "tslib": "^1.9.3",
     "rollup": "^0.67.1",
+    "rollup-plugin-typescript": "^1.0.0",
     "rollup-plugin-typescript2": "^0.18.0",
+    "tslib": "^1.9.3",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.16.0",
+    "tslint-eslint-rules": "^5.4.0",
     "typescript": "3.1.2"
   },
   "dependencies": {
