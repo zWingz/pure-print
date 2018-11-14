@@ -5,6 +5,7 @@
       "es7",
       "dom",
     ],
+    "declaration": true,
     "target": "es2015",
     // "target": "es2016",
     "allowSyntheticDefaultImports": true,

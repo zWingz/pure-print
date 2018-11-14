@@ -1,4 +1,4 @@
-import typescript from 'rollup-plugin-typescript'
+import typescript from 'rollup-plugin-typescript2'
 import pkg from './package.json'
 export default {
   input: 'src/index.ts',
@@ -14,6 +14,8 @@ export default {
     }
   ],
   plugins: [
-    typescript()
+    typescript({
+      clean: true
+    })
   ]
 }
